@@ -1,0 +1,58 @@
+				Bank marketing
+Business Problem:
+The business problem is a binary classification problem. The classification goal is to predict if the client contacted through the marketing campaign will subscribe a term deposit or not.
+
+About The Project:
+The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
+
+
+About the Dataset:
+This dataset gives information related to Bank marketing. The dataset contains 16 columns, deposit is the class variable which is affected by the other 15 columns. Here the aim is to classify the deposit variable to (deposit\non deposit) using different machine learning algorithms and find out which algorithm is suitable for this dataset.
+
+Attributes:
+1. `age`: This column represents the age of the clients or individuals targeted in the bank marketing campaign.
+
+2. `job`: This variable may indicate the occupation or job type of the clients, often categorized into different job categories.
+
+3. `marital`: This column represents the marital status of the clients, which can include categories like "single," "married," or "divorced."
+
+4. `education`: This variable may indicate the educational level or background of the clients, often categorized into different education levels.
+
+5. `default`: This column could represent whether the clients have credit in default, often encoded as "yes" or "no."
+
+6. `housing`: This variable may indicate whether the clients have a housing loan, typically encoded as "yes" or "no."
+
+7. `loan`: This column represents whether the clients have a personal loan, often encoded as "yes" or "no."
+
+8. `contact`: This variable could represent the type of communication or contact method used in the marketing campaign, such as "telephone" or "cellular."
+
+9. `month`: This column may represent the month when the clients were last contacted during the marketing campaign.
+
+10. `day_of_week`: This variable may indicate the day of the week when the clients were last contacted.
+
+11. `duration`: This is the duration (in seconds) of the last contact with the clients.
+
+12. `campaign`: This column may represent the number of contacts performed during the marketing campaign for the given client.
+
+13. `pdays`: This variable represents the number of days since the client was last contacted.
+
+14. `previous`: This column could represent the number of contacts made with the client before the current marketing campaign.
+
+15. `poutcome`: This variable may indicate the outcome of the previous marketing campaign, often categorized into different outcomes.
+
+16. `y`: This is typically the target variable and may represent whether the client subscribed to a term deposit or other financial product offered by the bank, often encoded as "yes" or "no."
+
+
+Following are the Conculsions from this Project:
+1.Remove null values and duplicate values.
+2.Rename the target column name 'y' to 'deposit' for easy understanding.
+3.convert categorical target  column  to numerical column i.e(yes:1 indicates subscribed for deposit term and no:0 indicates not subscribed for deposit term)
+4.Housemaid and management job holders are depositing at the age of 60-70 by obseving the graphs.
+5.Not subcribed deposit are 88% more than the subcribed deposit.So it means imbalanced data set
+6.Success rate of previous deposits are more than the present deposits.
+7.By observation of heat map most of the features are not correlated,only duration and deposit  features are correlated more than all features.
+8.Admin job people and married people are taking more subscriptions
+9. 0 number of contacts made with the client before the current marketing campaign are taking more subscriptions.
+10.By using one hot encoding category columnms are converted into integer columns
+11. we created a machine learning models that is able to predict how likely clients will subscribe to a bank term deposit. The best model was gradient boosting classifier. The model's performance is 90.48%.We should focus on targeting customers with duration and age as they are high importance features for the model and business.Therefore, we save time and money by knowing the characteristics of clients,so it will lead to increased growth and revenue.
+
